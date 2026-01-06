@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Thiago Braga — CV</title>
+    <style>
+        :root {
+            --accent: #2b6cb0;
+            --muted: #6b7280;
+            --line: #e6eef8;
+            --bg: #ffffff;
+            --text: #111827;
+            --light: #f7fafc;
+            --card: #ffffff;
+            --gap: 20px;
+            font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        /* page layout */
+        body {
+            margin: 0;
+            padding: 32px;
+            background: linear-gradient(180deg, #f3f6fb 0%, #f8fbff 100%);
+            color: var(--text);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .sheet {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card);
+            box-shadow: 0 6px 30px rgba(30, 60, 100, 0.08);
+            border-radius: 8px;
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: var(--gap);
+            padding: 28px;
+        }
+
+        /* header */
+        header {
+
+            grid-column: 1 / span 2;
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 6px;
+        }
+
+        .name {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--text);
+            margin: 0;
+            letter-spacing: 0.2px;
+        }
+
+        .meta {
+            margin: 4px 0 0 0;
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        .contact {
+            margin-left: auto;
+            text-align: right;
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        /* left column main sections */
+        main {
+            padding-right: 8px;
+        }
+
+        h2.section {
+            font-size: 14px;
+            color: var(--accent);
+            margin: 8px 0 8px 0;
+            letter-spacing: 0.6px;
+        }
+
+        p.lead {
+            margin: 0 0 12px 0;
+            line-height: 1.45;
+            color: #2b2f37;
+            font-size: 13px;
+        }
+
+        .job {
+            margin-bottom: 12px;
+        }
+
+        .job h3 {
+            margin: 0;
+            font-size: 15px;
+            font-weight: 600;
+            color: #0f1724;
+        }
+
+        .job .meta {
+            font-size: 12px;
+            color: var(--muted);
+            margin: 4px 0 6px 0;
+        }
+
+        .job ul {
+            margin: 6px 0 0 16px;
+            padding: 0;
+            color: #2f343a;
+            font-size: 13px;
+            line-height: 1.45;
+        }
+
+        /* right column / sidebar */
+        aside {
+            padding-left: 8px;
+            border-left: 1px solid var(--line);
+        }
+
+        .block {
+            background: transparent;
+            padding: 8px 0 16px 0;
+            margin-bottom: 8px;
+        }
+
+        .skill {
+            margin: 10px 0;
+        }
+
+        .skill .label {
+            font-size: 12px;
+            color: var(--muted);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .bar {
+            height: 8px;
+            background: var(--light);
+            border-radius: 8px;
+            margin-top: 6px;
+            overflow: hidden;
+        }
+
+        .bar>i {
+            display: block;
+            height: 100%;
+            background: var(--accent);
+            border-radius: 8px;
+        }
+
+        .side-list {
+            list-style: none;
+            padding: 0;
+            margin: 8px 0 0 0;
+            font-size: 13px;
+            color: #2c3136;
+        }
+
+        .lang {
+            margin: 8px 0;
+        }
+
+        /* small print & layout tweaks */
+        .divider {
+            height: 1px;
+            background: var(--line);
+            margin: 12px 0;
+        }
+
+        @media (max-width:760px) {
+            .sheet {
+                grid-template-columns: 1fr;
+                padding: 18px;
+            }
+
+            aside {
+                border-left: none;
+                padding-left: 0;
+                padding-top: 8px;
+                border-top: 1px solid var(--line);
+            }
+
+            header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center
+            }
+
+            .contact {
+                margin-left: 0;
+                text-align: center
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="sheet" role="document">
+        <header>
+            <div>
+                <h1 class="name">Thiago Braga</h1>
+                <div class="meta">Full Stack Developer / DevOps • 10+ years</div>
+            </div>
+            <div class="contact">
+                <div>770 Marciel de Arruda Campos St., Brazil</div>
+                <div style="margin-top:6px"><a href="mailto:thiago@thiagobraga.dev"
+                        style="color:var(--muted);text-decoration:none">thiago@thiagobraga.dev</a> · +55 14 99816 3279
+                </div>
+            </div>
+        </header> <!-- left: main content -->
+        <main>
+            <section class="block">
+                <h2 class="section">Professional Summary</h2>
+                <p class="lead">PHP & JavaScript developer with a decade of success leading teams in delivering
+                    appropriate technology solutions for desktop and
+
+                    mobile products. Comprehensive knowledge of enterprise architecture, agile methodologies, remote
+                    work, cloud services and web-based applications.</p>
+            </section>
+            <div class="divider" aria-hidden="true"></div>
+            <section class="block">
+                <h2 class="section">Employment History</h2>
+                <article class="job" aria-labelledby="job1">
+                    <h3 id="job1">Full Stack Developer / DevOps — Grupa Tecnoart</h3>
+                    <div class="meta">Barueri, Sao Paulo · Apr 2017 – Present</div>
+                    <ul>
+                        <li>Designed, built and maintained modern web platforms using Laravel, React, Node and Docker.
+                        </li>
+                        <li>Automated deployments and CI/CD pipelines, improving release frequency and stability.</li>
+                        <li>Led cross-functional teams and mentored junior engineers on best practices.</li>
+                    </ul>
+                </article>
+                <article class="job" aria- labelledby="job2">
+                    <h3 id="job2">Full Stack Developer — Jornal Publicacoes Eletronicas</h3>
+                    <div class="meta">Sao Paulo · Jun 2014 – Mar 2017</div>
+                    <ul>
+                        <li>Built and maintained web sites using PHP, Python and JavaScript.</li>
+                        <li>Improved performance of legacy systems and added new features based on user feedback.</li>
+                    </ul>
+                </article>
+            </section>
+            <div class="divider" aria-hidden="true"></div>
+            <section class="block">
+                <h2 class="section">Education</h2>
+                <p class="meta" style="color:var(--muted);font-size:13px;margin:2px 0 8px 0">B.Sc. Computer Science —
+                    Universidade de Sao Paulo</p>
+                <p class="meta" style="color:var(--muted);font-size:13px;margin:2px 0">Certifications: AWS Certified
+                    Developer • Docker Certified</p>
+            </section>
+        </main> <!-- right: sidebar -->
+        <aside>
+            <div class="block">
+                <h2 class="section" style="margin-top:0">Skills</h2>
+                <div class="skill">
+                    <div class="label"><span>PHP</span><span style="color:var(--muted)">Advanced</span></div>
+                    <div class="bar"><i style="width:85%"></i></div>
+                </div>
+                <div class="skill">
+                    <div class="label"><span>JavaScript</span><span style="color:var(--muted)">Advanced</span></div>
+                    <div class="bar"><i style="width:88%"></i></div>
+                </div>
+                <div class="skill">
+                    <div class="label"><span>HTML / CSS</span><span style="color:var(--muted)">Advanced</span></div>
+                    <div class="bar"><i style="width:92%"></i></div>
+                </div>
+                <div class="skill">
+                    <div class="label"><span>DevOps</span><span style="color:var(--muted)">Proficient</span></div>
+                    <div class="bar"><i style="width:70%"></i></div>
+                </div>
+                <div class="skill">
+                    <div class="label"><span>Databases</span><span style="color:var(--muted)">Proficient</span></div>
+                    <div class="bar"><i style="width:78%"></i></div>
+                </div>
+            </div>
+            <div class="block">
+                <h2 class="section">Languages</h2>
+                <ul class="side-list">
+                    <li>Portuguese — Native</li>
+                    <li>English — Fluent</li>
+                    <li>Spanish — Conversational</li>
+                </ul>
+            </div>
+            <div class="block">
+                <h2 class="section">Contact & Links</h2>
+                <ul class="side-list">
+                    <li><strong>Website</strong> — thiagobraga.dev</li>
+                    <li><strong>GitHub</strong> — github.com/thiagobraga</li>
+                    <li><strong>LinkedIn</strong> — linkedin.com/in/thiagobraga</li>
+                </ul>
+            </div>
+        </aside>
+    </section>
+</body>
+
+</html>
